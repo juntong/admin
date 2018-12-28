@@ -32,6 +32,8 @@ class Tag extends Resource
         'name',
     ];
 
+    public static $globallySearchable = false;
+
     /**
      * Get the fields displayed by the resource.
      *
