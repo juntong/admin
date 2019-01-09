@@ -68,7 +68,9 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
     public function tools()
     {
         return [
+            new \Infinety\Filemanager\FilemanagerTool(),
             \Vyuldashev\NovaPermission\NovaPermissionTool::make(),
+            new \Beyondcode\TinkerTool\Tinker(),
         ];
     }
 
